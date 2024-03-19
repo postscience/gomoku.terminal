@@ -124,6 +124,7 @@ if __name__ == "__main__":
 
     while True:
         time.sleep(.4)
+        print(f"Player: {tic.SYMBOLS[(len(tic.state)) % 2]}")
         move = input('Make a move: ')
         if tic.move(move):
             break
